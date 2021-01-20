@@ -26,12 +26,12 @@ export function renderAlbums(album) {
 
     const pPrice = document.createElement('p');
     pPrice.classList.add('price');
-    pPrice.textContent = album.price;
+    pPrice.textContent = `$${album.price}`;
     li.append(pPrice);
 
     const addToCartButton = document.createElement('button');
     addToCartButton.classList.add('add-to-cart');
-    addToCartButton.textContent = `Add To Cart`;
+    addToCartButton.textContent = `ADD TO CART`;
     li.append(addToCartButton);
 
     return li;

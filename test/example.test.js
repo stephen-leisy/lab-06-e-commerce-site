@@ -12,20 +12,11 @@ test('should take in an album and return a li', (expect) => {
         name: 'Sun Ra: Space Is The Place',
         image: 'sun-ra.png',
         description: `an excellent introduction to Sun Ra's vast and free-form jazz catalog`,
-        category: 'jazz',
+        category: 'Jazz',
         price: 20,
     };
 
-    const expected = `<li class="album-item">
-    <h2 class="album-name">Sun Ra: Space Is The Place</h2>
-    <img class="album-cover" src="../assets/sun-ra.png">
-
-
-    <p class="description">an excellent introduction to Sun Ra's vast and free-form jazz catalog</p>
-    <p class="category">Jazz</p>
-    <p class="price">$20</p>
-    <button class="add-to-cart">ADD TO CART</button>
-</li>`;
+    const expected = `<li class="album-item"><h2 class="album-name">Sun Ra: Space Is The Place</h2><img class="album-cover" src="../assets/sun-ra.png"><p class="description">an excellent introduction to Sun Ra's vast and free-form jazz catalog</p><p class="category">Jazz</p><p class="price">$20</p><button class="add-to-cart">ADD TO CART</button></li>`;
 
 
     //Act 
@@ -34,5 +25,5 @@ test('should take in an album and return a li', (expect) => {
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    expect.equal(actual.outerHTML, expected);
 });
