@@ -1,7 +1,9 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 import { renderAlbums } from '../Products/render-albums.js';
-import { findByID } from '../cart/cart-utils.js';
+import { findByID, calcItemTotal } from '../cart/cart-utils.js';
+
+
 
 const test = QUnit.test;
 
@@ -116,4 +118,27 @@ test('should take in album and 3 and return Kate Bush: Hounds of Love', (expect)
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);
+});
+
+test('should take in 2 and 22 and return 44', (expect) => {
+    //Arrange
+    // Set up your arguments and expectations
+    const album = {
+        id: 3,
+        name: 'Kate Bush: Hounds Of Love',
+        image: 'kate-bush.png',
+        description: `the fifth studio album by English singer-songwriter and musician Kate Bush`,
+        category: 'art pop',
+        price: 22,
+    };
+    const expected = 44;
+
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = calcItemTotal(2, album);
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual, expected);
 });
