@@ -1,0 +1,130 @@
+
+body {
+    https://coolors.co/generate and click export -> scss to get the colors to copy and paste below
+    /* --color1: hsla(349, 69%, 76%, 1);
+    --color2: hsla(207, 67%, 44%, 1);
+    --color3: hsla(200, 61%, 56%, 1);
+    --color4: hsla(187, 41%, 94%, 1);
+    --color5: hsla(170, 28%, 95%, 1); 
+
+    --color1: hsla(45, 86%, 83%, 1);
+    --color2: hsla(135, 65%, 98%, 1);
+    --color3: hsla(315, 37%, 86%, 1);
+    --color4: hsla(45, 73%, 98%, 1);
+    --color5: hsla(224, 40%, 79%, 1);  */
+    
+    --color1: #662e9b;
+    --color2: #eaeaea;
+
+   
+    
+    font-family: 'Titillium Web', sans-serif;
+    background-color: var(--color2);
+}
+
+
+main {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* margin-bottom: calc(var(--footer-height)); */
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    
+    
+    
+}
+
+div {
+    background-color: var(--color1);
+    /* width: 50%; */
+    /* max-width: 80%; */
+    max-height: 33%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column;  */
+ 
+    /* flex-wrap: wrap;  */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 2px black;
+    padding-right: 20px;
+    /* border: solid 2px black;  */
+    
+} 
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+   
+    /* border: solid 2px black; */
+}
+
+li {
+    
+    list-style: none;
+    width: 300px;
+    border: solid 2px;
+    background-color:lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+}
+img {
+    max-width: 300px;
+    max-height: 300px;
+
+}
+
+h1 {
+    font-family: 'Holtwood One SC', serif;
+    color: #662e9b;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #662e9b;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color:#662e9b;
+    background-color: lightblue;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+content {
+    width: 80%;
+}
+
+p {
+    /* margin: var(--gutter); */
+}
+  
+
+   
+
+

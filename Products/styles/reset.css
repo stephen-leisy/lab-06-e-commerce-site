@@ -4,7 +4,7 @@
    License: none (public domain)
 */
 
-*{
+/*{
     box-sizing: border-box;
 }
 
@@ -36,6 +36,7 @@ time, mark, audio, video {
 
 ol, ul {
 	list-style: none; 
-	/* max-height: 100px;
-	max-width: 100px; */
-} 
+	max-height: 100px;
+	max-width: 100px;
+}  
+
