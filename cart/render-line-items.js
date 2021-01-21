@@ -1,4 +1,4 @@
-import { calcItemTotal, findByID } from '../cart/cart-utils.js';
+import { calcItemTotal } from '../cart/cart-utils.js';
 
 export function renderLineItems(cart, album) {
     const quantity = cart.quantity;
@@ -15,6 +15,5 @@ export function renderLineItems(cart, album) {
     tr.append(productTd, quantityTd, priceTd);
 
     return tr;
-
 
 }
