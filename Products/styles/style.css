@@ -63,6 +63,10 @@ div {
 table {
     background-color: pink;
     width: 100%;
+    text-align: center;
+    /* align-items:flex-end;
+    justify-content:stretch;
+    flex-direction: column; */
     
 }
 

@@ -8,6 +8,6 @@ export function findByID(array, ID) {
 }
 
 export function calcItemTotal(cartQuantity, albumCost) {
-    const result = cartQuantity * Number(albumCost.price);
+    const result = cartQuantity * albumCost;
     return result;
 }

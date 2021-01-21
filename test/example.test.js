@@ -2,6 +2,7 @@
 // import { example } from '../example.js';
 import { renderAlbums } from '../Products/render-albums.js';
 import { findByID, calcItemTotal } from '../cart/cart-utils.js';
+import { renderLineItems } from '../cart/render-line-items.js';
 
 
 
@@ -136,9 +137,38 @@ test('should take in 2 and 22 and return 44', (expect) => {
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = calcItemTotal(2, album);
+    const actual = calcItemTotal(2, album.price);
 
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected);
+});
+test('should take in the cart and album data and return td', (expect) => {
+    //Arrange
+    // Set up your arguments and expectations
+    const cart = {
+        id: 3,
+        quantity: 2
+
+    };
+    const album = {
+        id: 3,
+        name: 'Kate Bush: Hounds Of Love',
+        image: 'kate-bush.png',
+        description: `the fifth studio album by English singer-songwriter and musician Kate Bush`,
+        category: 'art pop',
+        price: 22,
+
+    };
+
+    const expected = `<tr><td>Kate Bush: Hounds Of Love</td><td>2</td><td>$44</td></tr>`;
+
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = renderLineItems(cart, album);
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual.outerHTML, expected);
 });
