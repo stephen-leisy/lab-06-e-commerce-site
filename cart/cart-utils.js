@@ -21,7 +21,6 @@ export function calcOrderTotal(cartArray) {
     for (const item of cartArray) {
         const album = findByID(albums, item.id);
         const someTotal = calcItemTotal(item.quantity, album.price);
-        console.log(album);
         orderTotal = orderTotal + someTotal;
     }
 
