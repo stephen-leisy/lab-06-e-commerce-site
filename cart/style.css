@@ -1,6 +1,7 @@
 
 main {
     background-color: #662e9b;
+    color: whitesmoke;
 }
 table {
     background-color: pink;
@@ -23,4 +24,12 @@ button:hover{
 }
 div {
   border: solid 3px black;
+  color: whitesmoke;
+}
+
+a {
+    color:whitesmoke;
+}
+footer {
+    background-color: #662e9b;
 }
