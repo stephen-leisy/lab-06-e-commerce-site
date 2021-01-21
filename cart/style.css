@@ -1,0 +1,26 @@
+
+main {
+    background-color: #662e9b;
+}
+table {
+    background-color: pink;
+    width: 100%;
+    text-align: center;
+    /* align-items:flex-end;
+    justify-content:stretch;
+    flex-direction: column; */
+    
+}
+h1 {
+    font-family: 'Holtwood One SC', serif;
+    color: #662e9b;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    color: lightcoral;
+}
+div {
+  border: solid 3px black;
+}
