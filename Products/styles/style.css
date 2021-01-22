@@ -70,6 +70,10 @@ table {
     
 }
 
+a {
+    display: ;
+}
+
 ul {
     list-style: none;
     display: flex;
