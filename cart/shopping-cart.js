@@ -35,7 +35,7 @@ if (cart.length === 0) {
 
 placeOrderButton.addEventListener('click', () => {
 
-
+    alert(JSON.stringify(cart));
 
     console.log('hi');
 
