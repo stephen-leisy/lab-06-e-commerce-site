@@ -7,11 +7,13 @@ export function getCart() {
     if (stringyCart) {
         const parseCart = JSON.parse(stringyCart);
         return parseCart;
+
     } else {
         const stringyDefaultCart = JSON.stringify(initialCart);
         localStorage.setItem(CART, stringyDefaultCart);
         return initialCart;
     }
+
 }
 
 export function clearCart() {
@@ -26,9 +28,9 @@ export function setCart(cart) {
 
 export function addToCart(id) {
     const cart = getCart();
-    const newItem = findByID(cart, id);
-    if (newItem) {
-        newItem.quantity++;
+    const existItem = findByID(cart, id);
+    if (existItem) {
+        existItem.quantity++;
     } else {
         const newItem = {
             id: id,

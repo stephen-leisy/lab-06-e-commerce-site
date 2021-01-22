@@ -40,7 +40,7 @@ main {
 }
 
 div {
-    background-color: var(--color1);
+    background-image: url("../../assets/background.png");
     /* width: 50%; */
     /* max-width: 80%; */
     max-height: 33%;
@@ -86,13 +86,14 @@ li {
     list-style: none;
     width: 300px;
     border: solid 2px;
-    background-color:lightblue;
+    background-color:#e9c46a;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 50px;
+   
   
 }
 img {
@@ -103,25 +104,27 @@ img {
 
 h1 {
     font-family: 'Holtwood One SC', serif;
-    color: #662e9b;
+    color:;
 }
 
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #662e9b;
+    color: #e76f51;
     display: flex;
     justify-content: center;
 }
 
 button {
-    color:#662e9b;
-    background-color: lightblue;
+    color: white;
+    background-color: #e76f51;
 }
 
 header {
     display: flex;
     justify-content: center;
+    background-color: #e76f51;
+    border: solid 2px black;
 }
 
 
