@@ -1,4 +1,6 @@
+import { addToCart } from '../cart.utils.js';
 export function renderAlbums(album) {
+
 
     const li = document.createElement('li');
     li.classList.add('album-item');
@@ -30,6 +32,10 @@ export function renderAlbums(album) {
     li.append(pPrice);
 
     const addToCartButton = document.createElement('button');
+    addToCartButton.addEventListener('click', () => {
+        addToCart(album.id);
+
+    });
     addToCartButton.classList.add('add-to-cart');
     addToCartButton.textContent = `ADD TO CART`;
     li.append(addToCartButton);
