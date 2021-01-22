@@ -33,7 +33,7 @@ if (cart.length === 0) {
 }
 
 placeOrderButton.addEventListener('click', () => {
-    alert(JSON.stringify(cart));
+    alert(JSON.stringify(cart, true, 2));
     // localStorage.clear(); I had this before I remembered we had a function. LOL
     clearCart();
     location.reload();

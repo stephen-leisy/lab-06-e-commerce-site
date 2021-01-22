@@ -85,7 +85,7 @@ li {
     
     list-style: none;
     width: 300px;
-    border: solid 2px;
+    border: solid 10px;
     background-color:#e9c46a;
     display: flex;
     justify-content: center;
@@ -115,6 +115,12 @@ h2 {
     justify-content: center;
 }
 
+input {
+    background-color: teal;
+    width: 30%;
+
+}
+
 button {
     color: white;
     background-color: #e76f51;
@@ -136,7 +142,7 @@ content {
 p {
     /* margin: var(--gutter); */
 }
-  
+
 
    
 

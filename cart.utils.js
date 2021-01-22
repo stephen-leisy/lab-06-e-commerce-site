@@ -26,15 +26,17 @@ export function setCart(cart) {
     localStorage.setItem(CART, stringyCart);
 }
 
-export function addToCart(id) {
+export function addToCart(id, input) {
     const cart = getCart();
     const existItem = findByID(cart, id);
+    const addQuantity = input;
+    console.log(addQuantity);
     if (existItem) {
         existItem.quantity++;
     } else {
         const newItem = {
             id: id,
-            quantity: 1
+            quantity: addQuantity
 
         };
 
