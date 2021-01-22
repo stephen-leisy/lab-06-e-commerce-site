@@ -6,7 +6,6 @@ export function getCart() {
     const stringyCart = localStorage.getItem(CART);
     if (stringyCart) {
         const parseCart = JSON.parse(stringyCart);
-        console.log(parseCart);
         return parseCart;
     } else {
         const stringyDefaultCart = JSON.stringify(initialCart);
@@ -27,7 +26,6 @@ export function setCart(cart) {
 
 export function addToCart(id) {
     const cart = getCart();
-    console.log(cart);
     const newItem = findByID(cart, id);
     if (newItem) {
         newItem.quantity++;
