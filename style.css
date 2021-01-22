@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Holtwood One SC', serif;
+    
+}
+.title-page {
+   animation: color-change;
+   animation: color-change 5s ease infinite;
+}
+@keyframes color-change {   
+    0% {     
+      color: #e76f51;   
+    }   
+    25% {     
+      color: #f4a261;   
+    } 
+    50% {
+      color: #e9c46a;
+     }
+    75% {
+        color: #2a9d8f;
+    }
+  }

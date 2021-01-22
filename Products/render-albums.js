@@ -32,13 +32,19 @@ export function renderAlbums(album) {
     li.append(pPrice);
 
     const addToCartButton = document.createElement('button');
+    const selectQuantitiy = document.createElement('input');
+    selectQuantitiy.type = 'number';
+    selectQuantitiy.min = '0';
+
     addToCartButton.addEventListener('click', () => {
-        addToCart(album.id);
+        addToCart(album.id, selectQuantitiy.value);
 
     });
     addToCartButton.classList.add('add-to-cart');
     addToCartButton.textContent = `ADD TO CART`;
-    li.append(addToCartButton);
+
+
+    li.append(addToCartButton, selectQuantitiy);
 
     return li;
 }
