@@ -20,6 +20,23 @@ for (const item of cart) {
 const totalAmount = `$${calcOrderTotal(cart)}`;
 const blankTd = document.createElement('td');
 blankTd.textContent = `TOTAL`;
-const blankTd2 = document.createElement('td')
+const blankTd2 = document.createElement('td');
 
 tbody.append(blankTd, blankTd2, totalAmount);
+
+const placeOrderButton = document.querySelector('button');
+// console.log(cart);
+console.log(cart);
+if (cart.length === 0) {
+    placeOrderButton.disabled = true;
+} else {
+    placeOrderButton.disabled = false;
+}
+
+placeOrderButton.addEventListener('click', () => {
+
+
+
+    console.log('hi');
+
+});
