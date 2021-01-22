@@ -350,7 +350,7 @@ test('clearCart should clear all cart items', (expect) => {
     clearCart();
 
 
-    const expected = JSON.stringify([])
+    const expected = JSON.stringify([]);
     const actual = localStorage.getItem('CART');
 
 

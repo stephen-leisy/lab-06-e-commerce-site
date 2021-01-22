@@ -30,7 +30,7 @@ export function addToCart(id, input) {
     const cart = getCart();
     const existItem = findByID(cart, id);
     const addQuantity = input;
-    console.log(addQuantity);
+
     if (existItem) {
         existItem.quantity++;
     } else {
